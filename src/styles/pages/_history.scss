@@ -1,0 +1,87 @@
+.history-main {
+    background: url("./assets/images/history.png") no-repeat center/cover;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 10px 10px rgba(75, 75, 75, 0.201);
+
+    &-img {
+        position: absolute;
+        right: 50px;
+        bottom: 20px;
+
+    }
+}
+
+.history-container {
+    padding-top: 100px;
+    width: 80%;
+    height: 100vh;
+    @include flex($align:flex-start);
+    gap: 100px;
+    margin: auto;
+
+    img {
+       
+        border-radius: 17px;
+        width: 100%;
+
+    }
+
+    &-images {
+        overflow: hidden;
+        @include flex($align: stretch);
+        gap: 8px;
+        width:100%;
+
+        &-1 {
+            position: relative;
+            width: 100%;
+            border-radius: 17px;
+            overflow: hidden;
+            
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+              
+            }
+        }
+
+        &-2-3 {
+            width: 50%;
+            @include flex($direction: column);
+            gap: 8px;
+            
+         
+           
+
+            img{
+                border-radius: 17px;
+              
+            }
+        }
+    }
+
+
+
+    &-text {
+       
+        width: 70%;
+    }
+
+    &-paragraph {
+        font-family: $font-text;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 35px;
+        text-align: justify;
+        color: $color-dark;
+    }
+}
