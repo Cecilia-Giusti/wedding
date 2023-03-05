@@ -5,7 +5,11 @@ interface bandeauPartieInt {
 }
 
 const BandeauPartie = ({ text }: bandeauPartieInt) => {
-  return <div></div>;
+  return (
+    <div className='organisation-bandeau'>
+      <p className='organisation-bandeau-text'>{text}</p>
+    </div>
+  );
 };
 
 export default BandeauPartie;
