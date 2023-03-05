@@ -1,0 +1,17 @@
+.organisation{
+    &-main{
+        background: url("./assets/images/organisation.png") no-repeat center/cover;
+        height: 100vh;
+        position: relative;
+    
+        &-img {
+            position: absolute;
+          bottom:20px;
+          left:50%;
+         transform: translateX(-50%);
+            width: 40%;
+          
+        }
+    
+    }
+}

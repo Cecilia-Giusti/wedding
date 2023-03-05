@@ -5,11 +5,14 @@ import TripColumn from "../components/TripColumn";
 import data from "../data/database.json";
 
 const Organisation = () => {
-  console.log();
   return (
     <main className='organisation'>
       <section className='organisation-main'>
-        <img src='./assets/images/text-orga.png' alt='L organisation' />
+        <img
+          src='./assets/images/text-orga.png'
+          className='organisation-main-img'
+          alt='L organisation'
+        />
       </section>
       <BandeauPartie text='Programme' />
       <section className='organisation-programme'>
