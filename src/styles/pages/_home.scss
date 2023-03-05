@@ -1,0 +1,26 @@
+.home {
+    background: url("./assets/images/home.png") no-repeat center/cover;
+    height: 100vh;
+    position: relative;
+
+    &-img {
+        position: absolute;
+        left: 50px;
+        bottom: 0;
+      
+    }
+
+    &-date{
+font-family: $font-title;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+color: $color-light;
+position: absolute;
+right:40px;
+bottom: 40px;
+
+    }
+
+}
