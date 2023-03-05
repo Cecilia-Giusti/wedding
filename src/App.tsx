@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router";
+import { HashRouter } from "react-router-dom";
+import Header from "./components/Header";
+import Error from "./pages/Error";
+import History from "./pages/History";
+import Home from "./pages/Home";
+import More from "./pages/More";
+import Organisation from "./pages/Organisation";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/notre-histoire' element={<History />} />
+        <Route path='/organisation' element={<Organisation />} />
+        <Route path='/les-plus' element={<More />} />
+        <Route path='*' element={<Error />} />
+      </Routes>
+    </HashRouter>
   );
-}
+};
 
 export default App;
