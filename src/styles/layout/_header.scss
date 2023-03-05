@@ -1,0 +1,36 @@
+.header{
+    width: 100%;
+    
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    @include flex;
+
+    &-list{
+        @include flex;
+        padding:20px;
+        gap:20px;
+    }
+
+    &-item{
+        font-family: $font-title;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 39px;
+        text-transform:uppercase;
+        
+
+        &-link{
+            color: $color-light;
+
+           
+        }
+    }
+
+}
+
+.active-accueil, .active-history{
+    color: $color-nav-active;
+}
+.active-organisation, .active-more{
+    color: $color-nav-active2;
+}
