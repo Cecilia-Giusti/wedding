@@ -1,0 +1,17 @@
+.organisation-bandeau {
+    width: 100%;
+    height: 20vh;
+    background: $background-color-bandeau;
+    @include flex;
+
+
+    &-text {
+        font-family: $font-subtitle;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5rem;
+        line-height: 166px;
+        text-align: center;
+        color: $color-light;
+    }
+}

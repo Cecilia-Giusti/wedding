@@ -1,0 +1,147 @@
+{
+  "programmes": [
+    {
+      "id": 1,
+      "img": "./assets/icons/mairie.png",
+      "hours": "16 HEURES 15",
+      "text": "Mairie de Calenzana",
+      "name": "mairie"
+    },
+    {
+      "id": 2,
+      "img": "./assets/icons/eglise.png",
+      "hours": "17 HEURES",
+      "text": "Eglise de Calenzana",
+      "textPlus": "(Chapelle de Sainte Restitude)",
+      "name": "eglise"
+    },
+    {
+      "id": 3,
+      "img": "./assets/icons/cocktail.png",
+      "hours": "19 HEURES",
+      "text": "Parc de SALECCIA",
+      "textPlus": "(Espace Méditerranéen)",
+      "name": "parc"
+    },
+    {
+      "id": 4,
+      "img": "./assets/icons/photo.png",
+      "hours": "19 HEURES 30",
+      "text": "séance photos de groupe",
+      "textPlus": "au PARC DE SALECCIA",
+      "name": "photo"
+    },
+    {
+      "id": 5,
+      "img": "./assets/icons/repas.png",
+      "hours": "21 HEURES",
+      "text": "repas au PARC DE SALECCIA",
+      "textPlus": "(Salle de Réception)",
+      "name": "cocktail"
+    },
+    {
+      "id": 6,
+      "img": "./assets/icons/fete.png",
+      "hours": "23 HEURES",
+      "text": "que la fête commence",
+      "name": "fiesta"
+    }
+  ],
+  "reperer": [
+    {
+      "id": 1,
+      "title": "La mairie",
+      "img": "./assets/images/mairie.png",
+      "direction": "left",
+      "legendes": [
+        {
+          "name": "adresse",
+          "text": "Mairie de Calenzana, Place du Monuement, 20214 Calenzana"
+        },
+        { "name": "parking", "text": "Parking" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "L'église",
+      "img": "./assets/images/eglise.png",
+      "direction": "right",
+      "legendes": [
+        {
+          "name": "adresse",
+          "text": "Chapelle de Sainte-Restitude Lieu dit Santa Ristituda, D151, 20214 Calenzana"
+        },
+        { "name": "parking", "text": "Parking" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Le parc de Saleccia",
+      "img": "./assets/images/parc.png",
+      "direction": "left",
+      "legendes": [
+        {
+          "name": "adresse",
+          "text": "Parc de Saleccia Route de Bastia, 20220 L'Île-Rousse"
+        },
+        { "name": "parking", "text": "Parking" },
+        { "name": "cocktail", "text": "Cocktail Espace Méditerranéen" },
+        { "name": "repas", "text": "Laissez vous guider" }
+      ]
+    }
+  ],
+
+  "voyage": [
+    {
+      "id": 1,
+      "title": "Les aéroports",
+      "items": [
+        {
+          "id": 1,
+          "name": "Aéroport de Calvi, Sainte-Catherine",
+          "time": "15 min de Calenzana"
+        },
+        {
+          "id": 2,
+          "name": "Aéroport de Bastia, Poretta ",
+          "time": "1 h 45 de Calenzana",
+          "tips": "Les vols sont plus nombreux et souvent moins chèrs."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Les ports",
+      "items": [
+        {
+          "id": 1,
+          "name": "Port de l’Ile Rousse",
+          "time": "40 min de Calenzana"
+        },
+        {
+          "id": 2,
+          "name": "Port de Bastia",
+          "time": "2 heures",
+          "tips": "Les traversées sont plus nombreuses et souvent moins chères."
+        }
+      ]
+    }
+  ],
+  "tips": {
+    "plane": [
+      "Compagnies : Air France, Easy Jet et Volotea",
+      "Pensez à réserver une voiture en même temps que votre vol pour vous déplacer",
+      "Faites attention à ce que chaque passager (enfants inclus) dispose d’une pièce d’identité ou d’un passeport valide",
+      "Comptez en moyenne 1h30 de vol."
+    ],
+    "boat": [
+      "Compagnies : Corsica Linea et Corsica Ferries",
+      "La Corsica Linea effectue ses départs des ports de Marseille et Toulon.",
+      "La Corsica Ferries effectue ses départs des ports de Toulon et de Nice.",
+      "Vous avez la possbilité de voyager avec votre voiture.",
+      "Les traversées de jour sont moins chères mais extrèmement longues et fatiguantes.",
+      "Pour les traversées de nuit pensez à réserver une cabine lors de l’achat de votre billet. Vous pourrez même y manger en apportant des provisions.",
+      "Nous prenons souvent le bateau de nuit : nous partons le matin, faisons la route la journée, prenons le bateau le soir et débarquons dès le matin."
+    ]
+  }
+}

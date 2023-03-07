@@ -1,0 +1,123 @@
+.organisation {
+    &-main {
+        background: url("./assets/images/organisation.png") no-repeat center/cover;
+        height: 100vh;
+        position: relative;
+        box-shadow: 0px 10px 10px rgba(25, 7, 7, 0.438);
+        z-index:200;
+
+        &-img {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+
+        }
+
+    }
+
+    &-programme {
+        height: 100vh;
+        width: 100%;
+        background-color: $background-color-light;
+        @include flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      
+    
+
+        &-list {
+            position: relative;
+            width: 80%;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            row-gap: 10%;
+            padding-top: 50px;
+            padding-bottom: 100px;
+
+            &> :nth-child(-n+3) {
+                align-self: end;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 200px;
+                border: 1px solid black;
+
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 200px;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    &-reperer {
+        @include flex;
+        width: 100%;
+    }
+
+    &-voyage {
+        height: 100vh;
+        background: $background-color-light;
+        margin: auto;
+        width: 100%;
+
+
+        &-content {
+            padding-top: 80px;
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+
+    &-tips {
+        @include flex($direction: column, $align: flex-start);
+        width: 60%;
+        margin: auto;
+        gap:30px;
+        margin-top:80px;
+
+        &-title {
+            font-family: $font-title;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 3rem;
+            color: $color-title;
+        }
+
+        &-subtitle{
+            font-family: $font-title;
+font-style: normal;
+font-weight: 400;
+font-size: 2.3rem;
+color: $color-dark;
+        }
+
+        &-item{
+            font-family: $font-title;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2rem;
+            color: $color-dark;
+                    list-style-type: disc;
+               margin-left:50px;
+
+        }
+    }
+}
