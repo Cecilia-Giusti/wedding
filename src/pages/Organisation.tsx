@@ -47,26 +47,38 @@ const Organisation = () => {
       })}
       <BandeauPartie text='Préparer son voyage' />
       <section className='organisation-voyage'>
-        {data.voyage.map((item) => {
-          return (
-            <div>
-              <TripColumn />
-            </div>
-          );
-        })}
-
-        <div>
-          <h4>Petits conseils</h4>
-          <h5>En avion : </h5>
-          <ul>
-            {data.tips.plane.map((tips) => {
-              return <li>{tips}</li>;
+        <div className='organisation-voyage-content'>
+          {data.voyage.map((item) => {
+            return (
+              <TripColumn
+                id={item.id}
+                title={item.title}
+                items={item.items}
+                key={item.id}
+              />
+            );
+          })}
+        </div>
+        <div className='organisation-tips'>
+          <h6 className='organisation-tips-title'>Petits conseils</h6>
+          <p className='organisation-tips-subtitle'>En avion : </p>
+          <ul className='organisation-tips-list'>
+            {data.tips.plane.map((tips, id) => {
+              return (
+                <li className='organisation-tips-item' key={id}>
+                  {tips}
+                </li>
+              );
             })}
           </ul>
-          <h5>En bateau : </h5>
+          <p className='organisation-tips-subtitle'>En bateau : </p>
           <ul>
-            {data.tips.boat.map((tips) => {
-              return <li>{tips}</li>;
+            {data.tips.boat.map((tips, id) => {
+              return (
+                <li className='organisation-tips-item' key={id}>
+                  {tips}
+                </li>
+              );
             })}
           </ul>
         </div>

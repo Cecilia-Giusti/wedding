@@ -94,7 +94,7 @@
   "voyage": [
     {
       "id": 1,
-      "title": "Les aéroports (Haute-Corse)",
+      "title": "Les aéroports",
       "items": [
         {
           "id": 1,
@@ -111,7 +111,7 @@
     },
     {
       "id": 2,
-      "title": "Les ports (Haute-Corse)",
+      "title": "Les ports",
       "items": [
         {
           "id": 1,

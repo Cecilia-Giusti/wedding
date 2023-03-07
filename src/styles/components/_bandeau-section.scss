@@ -4,6 +4,7 @@
     background: $background-color-bandeau;
     @include flex;
 
+
     &-text {
         font-family: $font-subtitle;
         font-style: normal;

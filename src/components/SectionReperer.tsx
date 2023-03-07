@@ -11,7 +11,7 @@ interface sectionRepererInt {
   direction: string;
   legendes: Array<legendesInt>;
 }
-
+//
 const SectionReperer = ({
   title,
   img,
@@ -33,13 +33,14 @@ const SectionReperer = ({
           <div className={`${className}-text`}>
             <p className={`${className}-legende`}>Légende</p>
             <ul>
-              {legendes.map((legende) => {
+              {legendes.map((legende, id) => {
                 switch (legende.name) {
                   case "adresse":
                     return (
                       <LegendeItem
                         icone='fa-solid fa-location-dot'
                         text={legende.text}
+                        key={id}
                       />
                     );
                   case "parking":
@@ -47,6 +48,7 @@ const SectionReperer = ({
                       <LegendeItem
                         icone='fa-solid fa-square-parking'
                         text={legende.text}
+                        key={id}
                       />
                     );
 
@@ -55,6 +57,7 @@ const SectionReperer = ({
                       <LegendeItem
                         icone='fa-solid fa-champagne-glasses'
                         text={legende.text}
+                        key={id}
                       />
                     );
 
@@ -63,6 +66,7 @@ const SectionReperer = ({
                       <LegendeItem
                         icone='fa-solid fa-utensils'
                         text={legende.text}
+                        key={id}
                       />
                     );
 
