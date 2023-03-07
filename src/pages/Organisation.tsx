@@ -24,6 +24,8 @@ const Organisation = () => {
                   img={item.img}
                   hour={item.hours}
                   text={item.text}
+                  name={item.name}
+                  textPlus={item.textPlus}
                 />
               </li>
             );
