@@ -2,6 +2,7 @@
     width: 100%;
     height: 20vh;
     background: $background-color-bandeau;
+    @include flex;
 
     &-text {
         font-family: $font-subtitle;
