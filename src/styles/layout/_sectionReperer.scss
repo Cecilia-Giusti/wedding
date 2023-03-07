@@ -1,0 +1,149 @@
+.article-reperer-left{
+    width: 100%;
+    @include flex;
+    background:$background-white;
+    height: 100vh;
+
+    &-container{
+        width: 80%;
+       
+        @include flex($direction:column);
+
+
+    }
+
+    &-title{
+        font-family: $font-subtitle;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 124px;
+        text-align: center;
+        color: $color-title; 
+    }
+
+    &-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &-text{
+        @include flex($direction:column);
+        gap:60px;
+        width: 80%;
+
+        ul{
+            @include flex($direction:column, $align:flex-start);
+            gap:20px;
+          
+
+            li{
+                @include flex;
+                gap:20px;
+                i{
+                    color:$color-title;
+                    font-size: 3rem;
+                }
+
+                p{
+                    font-family:$font-title;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2rem;
+                    
+                    
+                    color: #000000; 
+                }
+            }
+        }
+    }
+
+    &-legende{
+        font-family: $font-title;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 77px;
+        color:$color-dark;
+    }
+}
+
+.article-reperer-right{
+    width: 100%;
+    @include flex;
+    background:$background-color-light;
+    height: 100vh;
+
+    &-container{
+        width: 80%;
+        @include flex($direction:column);
+        
+    }
+
+    &-title{
+        font-family: $font-subtitle;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 124px;
+        text-align: center;
+        color: $color-dark; 
+    }
+
+    &-content{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "le im";
+
+        img{
+            grid-area: im;
+            justify-self: end;
+        }
+    }
+
+
+
+    &-text{
+        @include flex($direction:column);
+        gap:60px;
+        width: 80%;
+        position: relative;
+        left:150px;
+
+        ul{
+            @include flex($direction:column, $align:flex-start);
+            gap:20px;
+            
+
+            li{
+                @include flex;
+                gap:20px;
+                i{
+                    color:$color-dark;
+                    font-size: 3rem;
+                }
+
+                p{
+                    font-family:$font-title;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2rem;
+                    
+                    
+                    color: #000000; 
+                }
+            }
+        }
+    }
+
+    &-legende{
+        font-family: $font-title;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 77px;
+        color:$color-dark;
+    }
+}

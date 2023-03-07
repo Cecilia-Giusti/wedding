@@ -60,4 +60,9 @@
             }
         }
     }
+
+    &-reperer{
+        @include flex;
+        width: 100%;
+    }
 }

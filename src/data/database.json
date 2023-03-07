@@ -51,34 +51,43 @@
     {
       "id": 1,
       "title": "La mairie",
-      "img": "./assets/icons/mairie.png",
+      "img": "./assets/images/mairie.png",
       "direction": "left",
-      "legende": {
-        "adresse": "Mairie de Calenzana, Place du Monuement, 20214 Calenzana",
-        "parking": "Parking"
-      }
+      "legendes": [
+        {
+          "name": "adresse",
+          "text": "Mairie de Calenzana, Place du Monuement, 20214 Calenzana"
+        },
+        { "name": "parking", "text": "Parking" }
+      ]
     },
     {
       "id": 2,
       "title": "L'église",
-      "img": "./assets/icons/eglise.png",
+      "img": "./assets/images/eglise.png",
       "direction": "right",
-      "legende": {
-        "adresse": "Chapelle de Sainte-Restitude Lieu dit Santa Ristituda, D151, 20214 Calenzana",
-        "parking": "Parking"
-      }
+      "legendes": [
+        {
+          "name": "adresse",
+          "text": "Chapelle de Sainte-Restitude Lieu dit Santa Ristituda, D151, 20214 Calenzana"
+        },
+        { "name": "parking", "text": "Parking" }
+      ]
     },
     {
       "id": 3,
       "title": "Le parc de Saleccia",
-      "img": "./assets/icons/parc.png",
-      "legende": {
-        "adresse": "Parc de Saleccia Route de Bastia, 20220 L'Île-Rousse",
-        "parking": "Parking",
-        "cocktail": "Cocktail Espace Méditerranéen",
-        "repas": "Laissez vous guider"
-      },
-      "direction": "left"
+      "img": "./assets/images/parc.png",
+      "direction": "left",
+      "legendes": [
+        {
+          "name": "adresse",
+          "text": "Parc de Saleccia Route de Bastia, 20220 L'Île-Rousse"
+        },
+        { "name": "parking", "text": "Parking" },
+        { "name": "cocktail", "text": "Cocktail Espace Méditerranéen" },
+        { "name": "repas", "text": "Laissez vous guider" }
+      ]
     }
   ],
 

@@ -40,7 +40,7 @@ const Organisation = () => {
               title={item.title}
               direction={item.direction}
               img={item.img}
-              legendes={item.legende}
+              legendes={item.legendes}
             />
           </section>
         );
