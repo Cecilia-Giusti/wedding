@@ -33,16 +33,21 @@
         width: 80%;
 
         ul{
-            @include flex($direction:column, $align:flex-start);
-            gap:20px;
+           display: grid;
+           row-gap: 20px;
           
 
             li{
-                @include flex;
-                gap:20px;
+         display: grid;
+         grid-template-columns: 10% 80%;
+         align-items: center;
+         -moz-column-gap: 20px;
+              column-gap: 20px;
+                
                 i{
                     color:$color-title;
                     font-size: 3rem;
+                    justify-self: center;
                 }
 
                 p{
@@ -113,16 +118,21 @@
         left:150px;
 
         ul{
-            @include flex($direction:column, $align:flex-start);
-            gap:20px;
-            
+            display: grid;
+            row-gap: 20px;
+           
 
             li{
-                @include flex;
-                gap:20px;
+                display: grid;
+         grid-template-columns: 10% 80%;
+         align-items: center;
+         -moz-column-gap: 20px;
+              column-gap: 20px;
                 i{
                     color:$color-dark;
                     font-size: 3rem;
+                    justify-self: center;
+                    
                 }
 
                 p{
@@ -147,3 +157,4 @@
         color:$color-dark;
     }
 }
+

@@ -50,7 +50,7 @@ const SectionReperer = ({
                       />
                     );
 
-                  case "coktail":
+                  case "cocktail":
                     return (
                       <LegendeItem
                         icone='fa-solid fa-champagne-glasses'
