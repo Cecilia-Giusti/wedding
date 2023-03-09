@@ -9,16 +9,10 @@ const History = () => {
       </section>
       <section className='history-container'>
         <div className='history-container-images'>
-          <div className='history-container-images-1'>
-            <img
-              src='./assets/images/photo1.jpg'
-              alt='Nous à la plage'
-              className='history-container-image1'
-            />
-          </div>
+          <div className='history-container-images-1'></div>
           <div className='history-container-images-2-3'>
-            <img src='./assets/images/photo2.jpg' alt='Nous à la pêche' />
-            <img src='./assets/images/photo3.jpg' alt='Nous sur le pont' />
+            <div className='history-container-images-2'></div>
+            <div className='history-container-images-3'></div>
           </div>
         </div>
         <div className='history-container-text'>
