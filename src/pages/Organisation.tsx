@@ -1,3 +1,4 @@
+import { useState } from "react";
 import BandeauPartie from "../components/BandeauPartie";
 import ProgrammeCard from "../components/ProgrammeCard";
 import SectionReperer from "../components/SectionReperer";
@@ -5,6 +6,7 @@ import TripColumn from "../components/TripColumn";
 import data from "../data/database.json";
 
 const Organisation = () => {
+  const [isZoomed, setIsZoomed] = useState(false);
   return (
     <main className='organisation'>
       <section className='organisation-main'>

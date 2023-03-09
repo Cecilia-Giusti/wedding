@@ -5,38 +5,75 @@
         position: relative;
         box-shadow: 0px 10px 10px rgba(25, 7, 7, 0.438);
         z-index:200;
+        @media screen and (max-width:600px) {
+            background: url("./assets/images/organisation-small.jpg") no-repeat center/cover;
+        }
+   
 
         &-img {
             position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 90%;
+            bottom: -5%;
+            transform: translate(-90%, 5%);
             width: 40%;
+
+         
+
+            @media screen and (max-width:900px) {
+              
+                width: 60%;
+            }
+            @media screen and (max-width:600px) {
+left:50%;
+transform: translate(-50%, 5%);
+                width: 80%;
+            }
 
         }
 
     }
 
     &-programme {
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
         background-color: $background-color-light;
         @include flex;
         padding-top: 20px;
         padding-bottom: 20px;
+        @media screen and (max-width:600px) {
+            height: 100%;
+         
+         }
+        
       
     
 
         &-list {
             position: relative;
             width: 80%;
-
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-
-            row-gap: 10%;
+           
+            grid-auto-rows:1fr;
             padding-top: 50px;
             padding-bottom: 100px;
+            gap: 5%;
+           
+
+            @media screen and (max-width:1100px) {
+                grid-template-columns: 1fr 1fr;
+                align-items: end;
+               
+
+            }
+            @media screen and (max-width:600px) {
+               height: 100%;
+                grid-template-columns: 1fr;
+                align-items: end;
+                gap: 2%;
+               
+
+            }
 
             &> :nth-child(-n+3) {
                 align-self: end;
@@ -50,6 +87,11 @@
                 transform: translateX(-50%);
                 width: 200px;
                 border: 1px solid black;
+                @media screen and (max-width:1100px) {
+              
+                   opacity: 0;
+                 }
+              
 
             }
 
@@ -61,7 +103,14 @@
                 transform: translateX(-50%);
                 width: 200px;
                 border: 1px solid black;
+                @media screen and (max-width:1100px) {
+              
+                    opacity: 0;
+                  }
             }
+
+
+         
         }
     }
 
@@ -71,10 +120,11 @@
     }
 
     &-voyage {
-        height: 100vh;
+        min-height: 100vh;
         background: $background-color-light;
         margin: auto;
         width: 100%;
+        padding-bottom:50px;
 
 
         &-content {
@@ -83,6 +133,11 @@
             margin: auto;
             display: grid;
             grid-template-columns: 50% 50%;
+            @media screen and (max-width:800px) {
+                grid-template-columns:1fr;
+                gap:50px;
+              }
+        
         }
     }
 
@@ -92,6 +147,9 @@
         margin: auto;
         gap:30px;
         margin-top:80px;
+        @media screen and (max-width:500px) {
+            width: 80%;
+            }
 
         &-title {
             font-family: $font-title;
@@ -99,6 +157,10 @@
             font-weight: 400;
             font-size: 3rem;
             color: $color-title;
+            @media screen and (max-width:500px) {
+              text-align: center;
+              }
+          
         }
 
         &-subtitle{
@@ -117,6 +179,11 @@ color: $color-dark;
             color: $color-dark;
                     list-style-type: disc;
                margin-left:50px;
+               @media screen and (max-width:500px) {
+                font-size: 1.5rem;
+                margin-left:20px;
+                margin-top: 10px;
+                }
 
         }
     }

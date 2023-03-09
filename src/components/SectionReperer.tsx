@@ -1,4 +1,5 @@
 import LegendeItem from "./LegendeItem";
+import { useState } from "react";
 
 interface legendesInt {
   name: string;
@@ -18,8 +19,20 @@ const SectionReperer = ({
   direction,
   legendes,
 }: sectionRepererInt) => {
+  const [isZoomed, setIsZoomed] = useState(false);
+
+  const handleClick = () => {
+    setIsZoomed(!isZoomed);
+    if (!isZoomed) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  };
+
   const className =
     direction === "right" ? "article-reperer-right" : "article-reperer-left";
+
   return (
     <article className={className}>
       <div className={`${className}-container`}>
@@ -28,7 +41,10 @@ const SectionReperer = ({
           <img
             src={img}
             alt={`Lieu de ${title}`}
-            className={`${className}-img`}
+            className={
+              isZoomed ? `${className}-img zoomed` : `${className}-img`
+            }
+            onClick={handleClick}
           />
           <div className={`${className}-text`}>
             <p className={`${className}-legende`}>Légende</p>

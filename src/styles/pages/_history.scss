@@ -4,84 +4,190 @@
     position: relative;
     width: 100%;
     box-shadow: 0px 10px 10px rgba(75, 75, 75, 0.201);
+    @media screen and (max-width:1400px) {
+       
+        background-position: left center;
+        
+    }
+    @media screen and (max-width:800px) {
+        background: url("./assets/images/history-small.jpg") no-repeat left/cover;
+        
+    }
+    @media screen and (max-width:500px) {
+        background: url("./assets/images/history-extra-small.jpg") no-repeat left/cover;
+        height: 120vh;
+        
+    }
 
     &-img {
         position: absolute;
         right: 50px;
         bottom: 20px;
+        @media screen and (max-width:1150px) {
+          width: 40%;
+          text-align: end;
+
+         img{
+           width: 100%;
+
+           @media screen and (max-width:600px) {
+           width: 60%;  
+        }
+         }
+            
+        }
+        @media screen and (max-width:700px) {
+          width: 55%;
+          right: 10px;
+        }
+
+        @media screen and (max-width:600px) {
+            width:80%;
+            top:10%;
+            left:0;
+            transform: translate(0, -10%);
+            text-align: start;
+          
+        }
 
     }
 }
 
 .history-container {
-    padding-top: 100px;
-    width: 80%;
+   
+    width: 90%;
     height: 100vh;
-    @include flex($align:flex-start);
+    @include flex;
     gap: 100px;
     margin: auto;
 
-    img {
-       
-        border-radius: 17px;
-        width: 100%;
-
+    @media screen and (max-width:1700px) {
+        gap: 30px;
+    }
+    @media screen and (max-width:1300px) {
+       height: 100%;
+       flex-direction: column-reverse;
+       padding-top: 50px;
+       padding-bottom: 50px;
+    }
+  
+   
+    @media screen and (max-width:500px) {
+        min-height: 120vh;
     }
 
     &-images {
-        overflow: hidden;
-        @include flex($align: stretch);
+        @include flex;
         gap: 8px;
         width:100%;
+        height: 800px;
 
+        @media screen and (max-width:700px) {
+            flex-direction: column;
+            height: 2400px;
+            justify-content: flex-start;
+        }
+        @media screen and (max-width:700px) {
+          
+            height: 1200px;
+            
+        }
+      
         &-1 {
-            position: relative;
+            background: url("./assets/images/photo1.jpg") no-repeat;
+            background-position:60% center;
             width: 100%;
+            height: 800px;
             border-radius: 17px;
-            overflow: hidden;
-            
-
-            img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                -o-object-fit: cover;
-                object-fit: cover;
+            background-size: cover;
+            @media screen and (max-width:700px) {
               
+                height: 400px;
             }
-        }
-
-        &-2-3 {
-            width: 50%;
-            @include flex($direction: column);
-            gap: 8px;
-            
-         
+          
            
+        }
 
-            img{
-                border-radius: 17px;
+        &-2-3{
+            @include flex($direction:column);
+            gap: 8px;
+            width:100%;
+            height: 100%;
+
+            @media screen and (max-width:700px) {
+                height: 1600px;
+            }
+            @media screen and (max-width:700px) {
+                height: 800px;
+            }
+            
+           
+        }
+
+        &-2{
+            background: url("./assets/images/photo2.jpg") no-repeat center/cover;
+            width: 100%;
+            height: 60%;
+            border-radius: 17px;
+            flex-grow: 2;
+            @media screen and (max-width:700px) {
+               
+                height: 800px;
+            }
+            @media screen and (max-width:700px) {
               
+                height: 400px;
+            }
+            
+        }
+        
+        &-3{
+            background: url("./assets/images/photo3.jpg") no-repeat center/cover;
+            width: 100%;
+            height: 40%;
+            border-radius: 17px;
+            @media screen and (max-width:700px) {
+              
+            height: 800px;
+            }
+
+            @media screen and (max-width:700px) {
+              
+                height: 400px;
             }
         }
-    }
+      
+            }
+        
+    
 
 
 
     &-text {
-       
         width: 70%;
+        @media screen and (max-width:1300px) {
+            width:90%;
+         }
     }
 
     &-paragraph {
         font-family: $font-text;
         font-style: normal;
         font-weight: 400;
-        font-size: 28px;
+        font-size: 2rem;
         line-height: 35px;
         text-align: justify;
         color: $color-dark;
+        -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+                hyphens: auto;
+
+        @media screen and (max-width:1800px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width:1600px) {
+            font-size: 1.5rem;
+            line-height: 30px;
+        }
     }
 }

@@ -2,25 +2,62 @@
     background: url("./assets/images/home.png") no-repeat center/cover;
     height: 100vh;
     position: relative;
+    width: 100%;
+
+    @media screen and (max-width:600px) {
+        height: 120vh;
+    }
+
 
     &-img {
         position: absolute;
         left: 100px;
         bottom: 50px;
+       
 
+        @media screen and (max-width:1400px) {
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -45%);
+        }
+
+        @media screen and (max-width:530px) {
+            width:100%;
+           img{
+            width:100%;
+           }
+        }
     }
 
     &-date {
         font-family: $font-title;
         font-style: normal;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 2rem;
         line-height: 39px;
         color: $color-light;
         position: absolute;
         right: 40px;
-        bottom: 40px;
+        bottom: 2%;
 
+        @media screen and (max-width:1600px) {
+            font-size: 1.5rem;
+        }
+
+        @media screen and (max-width:800px) {
+            font-size: 1.2rem;
+        }
+
+        @media screen and (max-width:628px) {
+            font-size: 1rem;
+        }
+        @media screen and (max-width:530px) {
+            text-align: center;
+            left:50%;
+            bottom:3%;
+            transform: translate(-50%, -3%);
+            width:100%;
+        }
+       
     }
-
 }
