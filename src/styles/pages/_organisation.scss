@@ -71,10 +71,11 @@
     }
 
     &-voyage {
-        height: 100vh;
+        min-height: 100vh;
         background: $background-color-light;
         margin: auto;
         width: 100%;
+        padding-bottom:50px;
 
 
         &-content {

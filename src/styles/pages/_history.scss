@@ -10,6 +10,16 @@
         right: 50px;
         bottom: 20px;
 
+        @media screen and (max-width:600px) {
+            width:100%;
+            left:50%;
+            bottom:2%;
+            transform: translate(-50%, -2%);
+           img{
+            width:100%;
+           }
+        }
+
     }
 }
 
