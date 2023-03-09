@@ -29,6 +29,10 @@
 
          img{
            width: 100%;
+
+           @media screen and (max-width:600px) {
+           width: 60%;  
+        }
          }
             
         }
@@ -39,9 +43,10 @@
 
         @media screen and (max-width:600px) {
             width:80%;
-            left:50%;
-                top:40%;
-            transform: translate(-50%, -40%);
+            top:10%;
+            left:0;
+            transform: translate(0, -10%);
+            text-align: start;
           
         }
 

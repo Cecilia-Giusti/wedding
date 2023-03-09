@@ -5,6 +5,14 @@
     z-index: 300;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.380208) 40.63%, rgba(0, 0, 0, 0.183434) 62.5%, rgba(0, 0, 0, 0) 83.85%);
     @include flex;
+    @media screen and (max-width:600px) {
+        background :none;
+        position: absolute;
+        top:0;
+        right: 0;
+
+    }
+
 
     &-list {
         @include flex;
