@@ -42,7 +42,7 @@ const Header = ({ openNav, setOpenNav, headerRef, screenWidth }: headerInt) => {
                 className={({ isActive }) =>
                   isActive
                     ? "header-item-link active-accueil"
-                    : "header-item-link"
+                    : "header-item-link accueil"
                 }>
                 Accueil
               </NavLink>
@@ -52,7 +52,7 @@ const Header = ({ openNav, setOpenNav, headerRef, screenWidth }: headerInt) => {
                 className={({ isActive }) =>
                   isActive
                     ? "header-item-link active-history"
-                    : "header-item-link"
+                    : "header-item-link history"
                 }
                 to={"/notre-histoire"}>
                 Notre Histoire
@@ -63,23 +63,23 @@ const Header = ({ openNav, setOpenNav, headerRef, screenWidth }: headerInt) => {
                 className={({ isActive }) =>
                   isActive
                     ? "header-item-link active-organisation"
-                    : "header-item-link"
+                    : "header-item-link organisation"
                 }
                 to={"/organisation"}>
                 Organisation
               </NavLink>
             </li>
-            {/* <li className='header-item'>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "header-item-link active-more"
-                : "header-item-list-link"
-            }
-            to={"/les-plus"}>
-            Les plus
-          </NavLink>
-        </li> */}
+            <li className='header-item'>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "header-item-link active-more"
+                    : "header-item-link more"
+                }
+                to={"/les-plus"}>
+                Les plus
+              </NavLink>
+            </li>
           </ul>
         </nav>
       ) : (
@@ -138,17 +138,20 @@ const Header = ({ openNav, setOpenNav, headerRef, screenWidth }: headerInt) => {
                   Organisation
                 </NavLink>
               </li>
-              {/* <li className={openNav ? "mobile-nav-item open-li-fourth" : "mobile-nav-item"}>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "mobile-nav-item-link active-more"
-                : "mobile-nav-item-list-link"
-            }
-            to={"/les-plus"}>
-            Les plus
-          </NavLink>
-        </li> */}
+              <li
+                className={
+                  openNav ? "mobile-nav-item open-li-fourth" : "mobile-nav-item"
+                }>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "mobile-nav-item-link active-more"
+                      : "mobile-nav-item-link"
+                  }
+                  to={"/les-plus"}>
+                  Les plus
+                </NavLink>
+              </li>
             </ul>
           </nav>
         </div>
