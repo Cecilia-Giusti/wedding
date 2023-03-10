@@ -15,7 +15,7 @@
     }
     @media screen and (max-width:500px) {
         background: url("./assets/images/history-extra-small.jpg") no-repeat left/cover;
-        height: 120vh;
+        min-height: 100vh;
         
     }
 
