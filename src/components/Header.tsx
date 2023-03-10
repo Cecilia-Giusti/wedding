@@ -38,6 +38,7 @@ const Header = ({ openNav, setOpenNav, headerRef, screenWidth }: headerInt) => {
           <ul className='header-list'>
             <li className='header-item'>
               <NavLink
+                onClick={() => window.scrollTo(0, 0)}
                 to={"/"}
                 className={({ isActive }) =>
                   isActive
@@ -49,6 +50,7 @@ const Header = ({ openNav, setOpenNav, headerRef, screenWidth }: headerInt) => {
             </li>
             <li className='header-item'>
               <NavLink
+                onClick={() => window.scrollTo(0, 0)}
                 className={({ isActive }) =>
                   isActive
                     ? "header-item-link active-history"
@@ -60,6 +62,7 @@ const Header = ({ openNav, setOpenNav, headerRef, screenWidth }: headerInt) => {
             </li>
             <li className='header-item'>
               <NavLink
+                onClick={() => window.scrollTo(0, 0)}
                 className={({ isActive }) =>
                   isActive
                     ? "header-item-link active-organisation"
@@ -71,6 +74,7 @@ const Header = ({ openNav, setOpenNav, headerRef, screenWidth }: headerInt) => {
             </li>
             <li className='header-item'>
               <NavLink
+                onClick={() => window.scrollTo(0, 0)}
                 className={({ isActive }) =>
                   isActive
                     ? "header-item-link active-more"
