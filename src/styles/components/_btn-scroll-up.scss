@@ -1,0 +1,34 @@
+.btn-scroll-up {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 9999; 
+    width: 50px;
+    height: 50px;
+    background: $color-title;
+    border-radius: 30px;
+    transition-duration: 500ms;
+    z-index:9999;
+    box-shadow: 3px 5px 9px -1px rgba(0, 0, 0, 0.25);
+
+    i {
+        color: $color-light;
+        transition-duration: 500ms;
+        font-size: 20px;
+        transform-origin: center;
+    }
+
+
+    &:hover{
+        background: $color-nav-active;
+        transition-duration: 500ms;
+
+        i{
+            transition-duration: 500ms;
+            color: $color-light;
+            transform: rotate(360deg);
+            transform-origin: center; 
+        }
+       
+    }
+}
