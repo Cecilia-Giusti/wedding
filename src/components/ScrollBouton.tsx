@@ -3,6 +3,14 @@ interface scrollBoutonInt {
 }
 
 const ScrollBouton = ({ isVisible }: scrollBoutonInt) => {
+  const buttonUp = document.querySelector("#up");
+
+  if (buttonUp) {
+    buttonUp.addEventListener("touchstart", (event) => {
+      event.preventDefault();
+      scrollToTop();
+    });
+  }
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
