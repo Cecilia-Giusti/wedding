@@ -9,17 +9,17 @@
         font-family: $font-subtitle;
         font-style: normal;
         font-weight: 400;
-        font-size:4rem;
-       
+        font-size: 4rem;
+
         text-align: center;
         color: $color-light;
 
         @media screen and (max-width: 800px) {
-            font-size:3rem;
-       }
+            font-size: 3rem;
+        }
 
         @media screen and (max-width: 500px) {
-            font-size:2.5rem;
-       }
+            font-size: 2.5rem;
+        }
     }
 }

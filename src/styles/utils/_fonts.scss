@@ -1,10 +1,13 @@
-
 @font-face {
-    font-family: "bauer";
-    src: url(./assets/fonts/BauerBodoniStd-Roman.ttf) format(truetype);
-    font-display: swap;
-  };
+  font-family: "bauer";
+  src: url(./assets/fonts/BauerBodoniStd-Roman.ttf) format(truetype);
+  font-display: swap;
+}
+
+;
 
 $font-title : 'bauer, serif';
-$font-subtitle : 'Libre Baskerville', serif;
-$font-text : 'GFS Didot', serif;
+$font-subtitle : 'Libre Baskerville',
+serif;
+$font-text : 'GFS Didot',
+serif;

@@ -6,7 +6,7 @@
 
     @media screen and (max-width:600px) {
         min-height: 100vh;
-        
+
     }
 
 
@@ -14,7 +14,7 @@
         position: absolute;
         left: 100px;
         bottom: 50px;
-       
+
 
         @media screen and (max-width:1400px) {
             top: 55%;
@@ -23,10 +23,11 @@
         }
 
         @media screen and (max-width:530px) {
-            width:100%;
-           img{
-            width:100%;
-           }
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
         }
     }
 
@@ -52,13 +53,14 @@
         @media screen and (max-width:628px) {
             font-size: 1rem;
         }
+
         @media screen and (max-width:530px) {
             text-align: center;
-            left:50%;
-            bottom:3%;
+            left: 50%;
+            bottom: 3%;
             transform: translate(-50%, -3%);
-            width:100%;
+            width: 100%;
         }
-       
+
     }
 }
